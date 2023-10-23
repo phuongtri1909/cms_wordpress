@@ -6043,3 +6043,12 @@ footer {
     background: #218838;
 }
 /* end module 4 */
+
+/* module 7 */
+.custom-navigation{
+	max-width: var(--responsive--alignwide-width);
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+}
+/*end module 7 */

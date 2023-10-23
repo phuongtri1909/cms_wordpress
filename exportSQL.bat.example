@@ -1,0 +1,20 @@
+@echo off
+echo Exporting data from MySQL to SQL file...
+
+rem Đường dẫn đến lệnh mysqldump của XAMPP
+set MYSQLDUMP="C:\xampp\mysql\bin\mysqldump.exe"
+
+rem Thông tin đăng nhập MySQL
+set DB_USER=root
+set DB_PASSWORD=
+set DB_HOST=localhost
+set DB_NAME=wordpress_631
+
+rem Đường dẫn đến tệp SQL để lưu dữ liệu
+set SQL_OUTPUT_FILE=C:\xampp\htdocs\wordpress\wordpress_631.sql
+
+rem Sử dụng lệnh mysqldump để xuất dữ liệu từ MySQL và lưu vào tệp SQL
+%MYSQLDUMP% -u%DB_USER% -p%DB_PASSWORD% -h%DB_HOST% %DB_NAME% > %SQL_OUTPUT_FILE%
+
+echo Data export completed.
+pause

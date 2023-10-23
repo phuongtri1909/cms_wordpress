@@ -17,10 +17,10 @@ get_header();
 	?>
 </div>
 <div class="row">
-	<div class="col-md-2">
+	<div class="col-md-3">
 
 	</div>
-	<div class="col-md-8">
+	<div class="col-md-6">
 		<?php if ( have_posts() ) {?>
 			<header class="page-header alignwide">
 				<h1 class="page-title">
@@ -70,7 +70,7 @@ get_header();
 		}?>
 	</div>
 
-	<div class="col-md-2">
+	<div class="col-md-3">
 
 	</div>
 </div>

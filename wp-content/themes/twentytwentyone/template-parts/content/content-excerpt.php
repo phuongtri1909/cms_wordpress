@@ -11,15 +11,21 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="content_home" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="row top_news_block_desc">
+		<div class="col-md-3 col-xs-3 topnewstime">
+            <span class="topnewsdate"><?php echo get_the_date('d'); ?></span><br>
+            <span class="topnewsmonth">Tháng <?php echo get_the_date('d'); ?></span><br>
+        </div>
+		<div class="col-md-9 col-xs-3 content_post">
+			<?php get_template_part( 'template-parts/header/excerpt-header', get_post_format() ); ?>
 
-	<?php get_template_part( 'template-parts/header/excerpt-header', get_post_format() ); ?>
-
-	<div class="entry-content">
-		<?php get_template_part( 'template-parts/excerpt/excerpt', get_post_format() ); ?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer default-max-width">
+			<div class="entry-content">
+				<?php get_template_part( 'template-parts/excerpt/excerpt', get_post_format() ); ?>
+			</div><!-- .entry-content -->
+		</div>
+	</div>
+	<!-- <footer class="entry-footer default-max-width">
 		<?php twenty_twenty_one_entry_meta_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer>.entry-footer -->
 </article><!-- #post-${ID} -->

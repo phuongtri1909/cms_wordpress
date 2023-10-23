@@ -5888,3 +5888,88 @@ footer {
 .is-IE .post-thumbnail .wp-post-image {
 	min-width: auto;
 }
+
+
+/* Module 2 */
+.content-list-post{
+	max-width: var(--responsive--alignwide-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-list-post .entry-header .entry-title {
+    color: #428bca !important;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.content-list-post .entry-header .entry-title a:hover{
+    color: #2a6496;
+}
+
+.site-main .content-list-post> *:first-child { 
+    margin-bottom: 0;
+}
+
+.site-main .content-list-post .content_home{
+    margin: 0 auto 15px;
+    height: auto;
+}
+
+.site-main .content-list-post > article > .entry-footer {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.content-list-post .content_home .content_post{
+    border-left: 1px solid #666;
+}
+.content-list-post .content_home .top_news_block_desc{
+    font-size: 0.9em;
+    padding: 15px;
+}
+
+.site-main .content-list-post .content_home .top_news_block_desc{
+    background-color: #fff;
+}
+
+.site-main .content-list-post .content_home .top_news_block_desc .content_post .entry-header{
+    margin-top: 0;
+}
+
+.site-main .content-list-post .content_home .top_news_block_desc .content_post .entry-content{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.site-main .content-list-post .content_home .top_news_block_desc .content_post .entry-content p{
+    margin-bottom: 10px !important;
+    font-size: 0.9em;
+    line-height: 1.42857143;
+    color: #5f5e5e;
+}
+
+.site-main .content-list-post .content_home .top_news_block_desc .topnewstime{
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.site-main .content-list-post .content_home .top_news_block_desc .topnewstime .topnewsdate{
+    font-family: 'Prata', serif;
+    font-size: 3.1em;
+    line-height: 1em;
+}
+
+.site-main .content-list-post .content_home .top_news_block_desc .topnewstime .topnewsmonth{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #5f5e5e;
+}
+.body{
+    font-size: 14px;
+}
+
+/* End Module 2 */

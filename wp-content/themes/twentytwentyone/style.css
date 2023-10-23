@@ -6088,3 +6088,77 @@ footer {
 }
 
 /* end module 12 */
+/* Moudule 10 */
+.container-detail{
+	max-width: var(--responsive--alignwide-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+.post-content-bg{
+	background: #56bdbf;
+	width: 100%;
+}
+.post-color{
+	color: var(--global--color-white);
+}
+.post-content-recent{
+	position: relative;
+	margin-left: 5px;
+}
+.post-content-recent .post-content-date  .entry-header-cus .entry-title-cus{
+	position: absolute;
+    float: left;
+    padding-left: 3.5rem;
+    text-transform: none !important;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    font-size: var(--global--line-height-page-title);
+    top: 7px;
+}
+.post-content-recent .post-content-date .entry-header-cus{
+	border-bottom: none !important;
+	padding-bottom: 0px !important;
+}
+.post-content-recent .post-content-date .entry-header-cus:hover a{
+	color: #fff !important;
+}
+.post-content-recent .post-content-date .entry-header-cus a{
+	font-size: 14px !important;
+    font-weight: 300;
+	text-underline-offset: 0.15em;
+	color: var(--global--color-white);
+	
+}
+
+.post-content-date{
+	position: relative;
+    font-size: 0.8em;
+    width: 15%;
+    min-width: 55px;
+    display: table-cell;
+    vertical-align: middle;
+    top: 1.5rem;
+    left: 10px;
+}
+.post-content-recent .post-content-date .post-md{
+	float: left;
+    font-family: 'Prata', serif;
+}
+.post-content-recent .post-content-date .post-day{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 1px;
+}
+.post-content-recent .post-content-date .post-month{
+	line-height: 1.7em;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+.post-content-recent .post-content-date .post-year{
+	line-height: 3.5em;
+    float: left;
+    margin-left: 3px;
+	margin-top: -5px;
+}
+/* End Module 10 */

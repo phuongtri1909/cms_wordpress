@@ -6053,41 +6053,6 @@ footer {
 }
 /*end module 7 */
 
-
-/* module 12 */
-.recent_comments {
-	position: relative;
-
-}
-.comment::after{
-	position: relative;
-}
-.comment::before{
-	position: absolute;
-	content: "";
-	top: 30px;
-	opacity: 0.1;
-	width: 30px;
-	border-bottom: 2px solid #000;
-}
-.comment-content{
-	position: relative;
-	color: #428bca;
-	font-weight: 500;
-	font-size: 90%;
-
-}
-.comment-content::after{
-	position: absolute;
-	content: "";
-	top: 30px;
-	opacity: 0.1;
-	width: 200px;
-	border-bottom: 1px solid #000;
-	color: #428bca;
-}
-
-/* end module 12 */
 /* Moudule 10 */
 .container-detail{
 	max-width: var(--responsive--alignwide-width);
@@ -6162,4 +6127,3 @@ footer {
 	margin-top: -5px;
 }
 /* End Module 10 */
-/*end module 7 */

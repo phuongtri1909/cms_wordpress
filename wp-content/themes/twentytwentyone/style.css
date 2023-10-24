@@ -5927,13 +5927,12 @@ footer {
 .content-list-post .content_home .content_post{
     border-left: 1px solid #666;
 }
-.content-list-post .content_home .top_news_block_desc{
-    font-size: 0.9em;
-    padding: 15px;
-}
 
 .site-main .content-list-post .content_home .top_news_block_desc{
     background-color: #fff;
+	font-size: 0.9em;
+    padding: 15px;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,.5);
 }
 
 .site-main .content-list-post .content_home .top_news_block_desc .content_post .entry-header{

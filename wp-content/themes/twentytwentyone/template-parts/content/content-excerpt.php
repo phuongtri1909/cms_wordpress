@@ -12,7 +12,7 @@
 ?>
 
 <article class="content_home" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="row top_news_block_desc">
+	<div class="row top_news_block_desc top_new_block_desc_5">
 		<div class="col-md-3 col-xs-3 topnewstime">
             <span class="topnewsdate"><?php echo get_the_date('d'); ?></span><br>
             <span class="topnewsmonth">Tháng <?php echo get_the_date('d'); ?></span><br>

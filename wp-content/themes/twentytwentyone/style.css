@@ -6127,3 +6127,33 @@ footer {
 	margin-top: -5px;
 }
 /* End Module 10 */
+
+/* Module 5 */
+.content-list-post .list-view-search{
+	background: #21759b !important;
+	margin-bottom: 15px !important;
+}
+.content_home .top_new_block_desc_5{
+	background: none !important;
+}
+.wp-block-image img {
+    display: none !important;
+}
+
+.list-view-search .top_news_block_thumb{
+	max-width: 100%;
+    width: 100%;
+}
+.top_news_block_thumb img{
+	width: 255px;
+    height: 137px;
+	object-fit: cover;
+	display: block !important;
+}
+.top_new_block_desc_5 .content_post .entry-header-cus-5{
+	margin-bottom: -2px !important;
+}
+.top_news_block_desc .content-detail-search {
+    margin-left: -5.5em;
+}
+/* End Module 5 */

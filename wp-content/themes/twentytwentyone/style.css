@@ -6051,6 +6051,36 @@ footer {
     margin-right: auto;
     background: #fff;
 }
+
+.custom-navigation .post-navigation .post-content-date{
+	position: static;
+	margin-left: 20px;
+}
+
+.custom-navigation .post-navigation .post-content-recent{
+	margin-left: 30px;
+}
+
+.custom-navigation .post-navigation .post-content-date a{
+	margin-top: 10px;
+    display: block;
+    color: #000;
+	font-weight: 100;
+    font-size: 14px;
+}
+
+.custom-navigation .post-navigation .post-content-date .post-color{
+	color: #333;
+	font-weight: 600;
+}
+
+.custom-navigation .post-navigation .post-content-date .post-day{
+	border-bottom: 1px solid #333;
+}
+
+.custom-navigation .post-navigation .post-content-date .post-year{
+	margin-right: 45px;
+}
 /*end module 7 */
 
 /* Moudule 10 */

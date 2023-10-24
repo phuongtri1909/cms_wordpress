@@ -46,7 +46,7 @@ while ( have_posts() ) :
                             </div>
                             <span class="post-year post-color"><?php echo get_the_date('y', $previous_post); ?></span>
 							<?php
-                            previous_post_link('%link', '&laquo; %title <span class="post-date">' . $previous_post_date . '</span>');?>
+                            previous_post_link('%link', '%title ');?>
                         </div>
                     </article>
 					<?php
@@ -66,7 +66,7 @@ while ( have_posts() ) :
                             </div>
                             <span class="post-year post-color"><?php echo get_the_date('y', $next_post); ?></span>
 							<?php
-                            next_post_link('%link', '<span class="post-date">' . $next_post_date . '</span> %title &raquo;');?>
+                            next_post_link('%link', ' %title');?>
                         </div>
                     </article>
 					<?php

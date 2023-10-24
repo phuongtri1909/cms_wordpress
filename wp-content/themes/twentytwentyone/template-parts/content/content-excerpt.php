@@ -15,7 +15,7 @@
 	<div class="row top_news_block_desc top_new_block_desc_5">
 		<div class="col-md-3 col-xs-3 topnewstime">
             <span class="topnewsdate"><?php echo get_the_date('d'); ?></span><br>
-            <span class="topnewsmonth">Tháng <?php echo get_the_date('d'); ?></span><br>
+            <span class="topnewsmonth">Tháng <?php echo get_the_date('m'); ?></span><br>
         </div>
 		<div class="col-md-9 col-xs-3 content_post">
 			<?php get_template_part( 'template-parts/header/excerpt-header', get_post_format() ); ?>

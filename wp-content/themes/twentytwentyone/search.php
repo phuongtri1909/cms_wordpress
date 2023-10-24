@@ -70,9 +70,33 @@ get_header();
 		}?>
 	</div>
 
+	
 	<div class="col-md-3">
 
-	</div>
+	<?php
+		// Lấy các bình luận cha
+		$parent_comments = get_comments(array(
+    	'post_id' => get_the_ID(), // ID của bài viết hiện tại
+    	'parent' => 0, // Chọn các bình luận cha
+	)); var_dump ($parent_comments);
+		foreach ($parent_comments as $parent_comment) {
+  			  // Hiển thị nội dung của bình luận cha
+    		echo '<p>' . $parent_comment->comment_content . '</p>';
+			// Lấy các bình luận đã reply cho bình luận cha
+    $child_comments = get_comments(array(
+        'post_id' => get_the_ID(),
+        'parent' => $parent_comment->comment_ID, // ID của bình luận cha
+    ));
+
+    foreach ($child_comments as $child_comment) {
+        // Hiển thị nội dung của bình luận đã reply
+        echo '<p>' . $child_comment->comment_content . '</p>';
+    }
+}
+?>
+
+	
+</div>
 </div>
 
 <?php

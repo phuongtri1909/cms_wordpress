@@ -5949,6 +5949,7 @@ footer {
     font-size: 0.9em;
     line-height: 1.42857143;
     color: #5f5e5e;
+	font-weight: 300;
 }
 
 .site-main .content-list-post .content_home .top_news_block_desc .topnewstime{

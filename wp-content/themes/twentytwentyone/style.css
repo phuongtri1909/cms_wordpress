@@ -6163,8 +6163,9 @@ footer {
 	background: #ffffff !important;
 	margin-bottom: 15px !important;
 }
-.content_home .top_new_block_desc_5{
+.list-view-search .content-detail-search .content_home .top_new_block_desc_5{
 	background: none !important;
+	box-shadow: none !important;
 }
 .wp-block-image img {
     display: none !important;

@@ -6176,7 +6176,7 @@ footer {
     width: 100%;
 }
 .top_news_block_thumb img{
-	width: 255px;
+	width: 235px;
     height: 137px;
 	object-fit: cover;
 	display: block !important;
@@ -6186,6 +6186,15 @@ footer {
 }
 .top_news_block_desc .content-detail-search {
     margin-left: -0.5em;
+}
+.content-detail-search .topnewstime-5 .topnewsmonth-5{
+	white-space: nowrap;
+}
+.list-view-search .top_new_block_desc_5 .topnewstime-5{
+margin-left: -11.5px;
+}
+.list-view-search .top_new_block_desc_5 .content_post-5{
+margin-left: 11px;
 }
 /* End Module 5 */
 /* Module 12 */

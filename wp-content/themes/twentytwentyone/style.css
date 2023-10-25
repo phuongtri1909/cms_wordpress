@@ -6231,3 +6231,49 @@ margin-left: 11px;
 }
 
 /* End module 12 */
+
+
+/* Module 15*/
+
+ul.timeline {
+	list-style-type: none;
+	position: relative;
+	padding-left: 0;
+  }
+  
+  ul.timeline:before {
+	content: ' ';
+	background: #d4d9df;
+	display: inline-block;
+	position: absolute;
+	left: 30px;
+	width: 2px;
+	height: 100%;
+	z-index: 1;
+  }
+  
+  ul.timeline > li {
+	margin-bottom: 20px;
+	padding-left: 60px;
+	position: relative;
+  }
+  
+  ul.timeline > li:before {
+	content: '';
+	background: white;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	border: 3px solid #22c0e8;
+	left: 20px;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 2;
+  }
+/* End Module 15*/
+
+
+
+
+

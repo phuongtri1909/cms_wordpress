@@ -19,7 +19,6 @@ get_header();
 <div class="content-list-post">
 <div class="row">
 	<div class="col-md-3">
-
 	</div>
 	<div class="col-md-6">
 		<?php if ( have_posts() ) {?>
@@ -98,6 +97,44 @@ get_header();
 
 	</div>
 </div>
+<div class="row">
+<div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<h4 class="latest-news-title">Latest News</h4>
+			<ul class="timeline">
+				<?php
+				$args = array(
+					'posts_per_page' => -1,
+					'post_status'    => 'publish',
+					'orderby'        => 'post_date',
+					'order'          => 'DESC',
+				);
+
+				$latest_posts = get_posts($args);
+
+				if ($latest_posts) {
+					foreach ($latest_posts as $post) {
+						setup_postdata($post);
+						?>
+						<li class="timeline-item">
+							<a class="post-link" target="_blank" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							<a class="post-date float-right" href="#"><?php echo get_the_date(); ?></a>
+							<p class="post-content"><?php the_content(); ?></p>
+						</li>
+						<?php
+					}
+
+					wp_reset_postdata();
+				} else {
+					echo '<li class="no-posts">No posts found.</li>';
+				}
+				?>
+			</ul>
+		</div>
+	</div>
+</div>
+	</div>
 </div>
 <?php
 get_footer();

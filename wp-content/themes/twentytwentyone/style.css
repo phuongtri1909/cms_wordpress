@@ -6062,10 +6062,10 @@ footer {
 }
 
 .custom-navigation .post-navigation .post-content-date a{
-	margin-top: 10px;
+	margin-top: 8px;
     display: block;
     color: #000;
-	font-weight: 100;
+    font-weight: 100;
     font-size: 14px;
 }
 
@@ -6075,11 +6075,13 @@ footer {
 }
 
 .custom-navigation .post-navigation .post-content-date .post-day{
+	padding-bottom: 3px;
 	border-bottom: 1px solid #333;
 }
 
 .custom-navigation .post-navigation .post-content-date .post-year{
 	margin-right: 45px;
+	padding-top: 2px;
 }
 /*end module 7 */
 

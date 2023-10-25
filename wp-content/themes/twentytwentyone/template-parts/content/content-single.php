@@ -10,7 +10,7 @@
  */
 
 ?>
-<div class="container-detail">
+
     <div class="row">
         <div class="col-md-3">
             <!-- Nội dung các cột khác trong col-md-2 ở đây -->
@@ -115,4 +115,3 @@
             </div>
         </div>
     </div>
-</div>

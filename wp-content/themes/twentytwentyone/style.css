@@ -6235,13 +6235,13 @@ margin-left: 11px;
 
 /* Module 15*/
 
-ul.timeline {
+ul.timeline.lastpost {
 	list-style-type: none;
 	position: relative;
 	padding-left: 0;
   }
   
-  ul.timeline:before {
+  ul.timeline.lastpost:before {
 	content: ' ';
 	background: #d4d9df;
 	display: inline-block;
@@ -6252,13 +6252,13 @@ ul.timeline {
 	z-index: 1;
   }
   
-  ul.timeline > li {
+  ul.timeline.lastpost > li {
 	margin-bottom: 20px;
 	padding-left: 60px;
 	position: relative;
   }
   
-  ul.timeline > li:before {
+  ul.timeline.lastpost > li:before {
 	content: '';
 	background: white;
 	display: inline-block;

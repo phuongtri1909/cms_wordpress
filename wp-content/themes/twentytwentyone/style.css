@@ -5953,13 +5953,13 @@ footer {
 
 .site-main .content-list-post .content_home .top_news_block_desc .topnewstime{
     height: 50px;
-    margin-top: 10px;
+	margin-top: 7px;
     text-align: center;
 }
 
 .site-main .content-list-post .content_home .top_news_block_desc .topnewstime .topnewsdate{
     font-family: 'Prata', serif;
-    font-size: 3.1em;
+    font-size: 3.5em;
     line-height: 1em;
 }
 

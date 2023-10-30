@@ -81,7 +81,7 @@ while ( have_posts() ) :
 	if ( comments_open() || get_comments_number() ) {?>
 		
 		<div class="container">
-		<div class="row">
+		<div class="commentspost row">
 			<?php
 			// Lấy các comments mới nhất từ WP sử dụng WP API
 			$comments = get_comments(array(

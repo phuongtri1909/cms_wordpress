@@ -5889,12 +5889,22 @@ footer {
 	min-width: auto;
 }
 
+.widget-area, .pagination, .comments-pagination, .post-navigation, .site-footer, .site-header, .alignwide, .wide-max-width {
+    max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+.container-detail {
+    max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
 
 /* Module 2 */
 .content-list-post{
-	max-width: var(--responsive--alignwide-width);
-    margin-left: auto;
-    margin-right: auto;
+	max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
 }
 
 .content-list-post .entry-header .entry-title {
@@ -6019,8 +6029,10 @@ footer {
 
 .site-main .search-none .no-results .page-content{
     text-align: center;
-    margin: 0 auto;
-    max-width: var(--responsive--alignwide-width);
+    margin: 0;
+	max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
     background: #f5efe0;
     padding: 25px 0 45px;
 }
@@ -6052,9 +6064,9 @@ footer {
 
 /* module 7 */
 .custom-navigation{
-	max-width: var(--responsive--alignwide-width);
-    margin-left: auto;
-    margin-right: auto;
+	max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
     background: #fff;
 }
 
@@ -6092,11 +6104,6 @@ footer {
 /*end module 7 */
 
 /* Moudule 10 */
-.container-detail{
-	max-width: var(--responsive--alignwide-width);
-    margin-left: auto;
-    margin-right: auto;
-}
 .post-content-bg{
 	background: #56bdbf;
 	width: 100%;

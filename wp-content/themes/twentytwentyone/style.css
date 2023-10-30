@@ -5953,13 +5953,13 @@ footer {
 
 .site-main .content-list-post .content_home .top_news_block_desc .topnewstime{
     height: 50px;
-    margin-top: 10px;
+	margin-top: 7px;
     text-align: center;
 }
 
 .site-main .content-list-post .content_home .top_news_block_desc .topnewstime .topnewsdate{
     font-family: 'Prata', serif;
-    font-size: 3.1em;
+    font-size: 3.5em;
     line-height: 1em;
 }
 
@@ -5983,7 +5983,7 @@ footer {
     border-bottom: none;
     margin-bottom: 0;
     text-align: center;
-    padding: 50px 0 30px;
+    padding: 43px 0 30px;
     font-weight: bold;
     background: #fff;
     display: flex;
@@ -6062,10 +6062,10 @@ footer {
 }
 
 .custom-navigation .post-navigation .post-content-date a{
-	margin-top: 10px;
+	margin-top: 8px;
     display: block;
     color: #000;
-	font-weight: 100;
+    font-weight: 100;
     font-size: 14px;
 }
 
@@ -6075,11 +6075,13 @@ footer {
 }
 
 .custom-navigation .post-navigation .post-content-date .post-day{
+	padding-bottom: 3px;
 	border-bottom: 1px solid #333;
 }
 
 .custom-navigation .post-navigation .post-content-date .post-year{
 	margin-right: 45px;
+	padding-top: 2px;
 }
 /*end module 7 */
 
@@ -6157,6 +6159,53 @@ footer {
 	margin-top: -5px;
 }
 /* End Module 10 */
+
+/* Module 14 */
+
+/* CSS Test begin */
+.comment-box {
+    margin-top: 30px !important;
+}
+/* CSS Test end */
+
+.comment-box img {
+    width: 50px;
+    height: 50px;
+}
+.comment-box .media-left {
+    padding-right: 10px;
+    width: 65px;
+}
+.comment-box .media-body p {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.comment-box .media-body .media p {
+    margin-bottom: 0;
+}
+.comment-box .media-heading {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    position: relative;
+    margin-bottom: -1px;
+}
+.comment-box .media-heading:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-width: 1px 0 0 1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: -6px;
+}
+
+
+/* End Module 14 */
 
 /* Module 5 */
 .content-list-post .list-view-search{

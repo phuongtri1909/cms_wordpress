@@ -18,9 +18,9 @@ get_header();
 </div>
 <div class="content-list-post">
 <div class="row">
-<div class="page col-md-3">
+<div class="col-md-3">
 
-  <div id="content">
+  <div id="content"class="page">
     <h1 class="titlepage" >Trang mới nhất</h1>
 	<hr class="gg">
     <ul class="page-list">

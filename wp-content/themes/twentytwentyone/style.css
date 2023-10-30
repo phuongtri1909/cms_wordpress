@@ -6764,8 +6764,9 @@ section .section-title {
     width: 45px;
     margin-bottom: 10px;
 }
-.page{
+#content.page{
 	background: #ffffff;
+	height: auto;
 }
 .gg{
 	border-color: #999eab;

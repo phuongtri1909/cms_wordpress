@@ -6323,11 +6323,11 @@ ul.timeline.lastpost {
 /* End Module 15*/
 
 /* module 6 */
-.detail-title {
+.detailpost .detail-title {
 	font-size: 3rem  !important;
 }
 
-.date-detail {
+.detailpost .date-detail {
 	display: flex !important;
     align-items: center !important;
 	background: #f5ce31 !important;
@@ -6338,13 +6338,13 @@ ul.timeline.lastpost {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) !important;
 }
 
-.alignwide .overviewline {
+.detailpost .alignwide .overviewline {
 	border-bottom: 1px solid #cecece !important;
     margin: 25px 0 15px !important;
     position: relative !important;
 }
 
-.alignwide .overviewline::after {
+.detailpost .alignwide .overviewline::after {
 	content: "" !important;
     position: absolute !important;
     top: 0 !important;
@@ -6355,7 +6355,7 @@ ul.timeline.lastpost {
     display: block !important;
     width: 0 !important;
 }
-.alignwide .overviewline:before {
+.detailpost .alignwide .overviewline:before {
     content: "";
     position: absolute;
     top: 0;
@@ -6366,13 +6366,13 @@ ul.timeline.lastpost {
     display: block;
     width: 0;
 }
-.headlinesday {
+.detailpost .headlinesday {
     border-bottom: 1px solid #000;
 }
-.headlinesseparator {
+.detailpost .headlinesseparator {
     margin: 0 5px !important;
 }
-.ten h1  {
+.detailpost .ten h1  {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #000 !important;
 	font-weight: bold;	
@@ -6380,12 +6380,16 @@ ul.timeline.lastpost {
 	margin: 0;
     padding: 0;
 }
-.ten .ten1 {
+.detailpost .ten .ten1 {
 	font-size: 2.1em !important;
 }
-.entry-content{
+.detailpost .entry-content{
 	top: 10px;
 	font-style: italic;
+}
+.detailpost .entry-content p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	
 }
 /* end module 6 */
 

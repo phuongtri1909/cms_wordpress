@@ -16,11 +16,13 @@
             <!-- Nội dung các cột khác trong col-md-2 ở đây -->
         </div>
         <div class="col-md-6">
+            
         <?php     
 $date = get_the_date('d');
 $month = get_the_date('m');
 $year = get_the_date('y');
 ?>
+<div class="detailpost">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <header class="entry-header alignwide">
@@ -31,7 +33,7 @@ $year = get_the_date('y');
             <div class="headlinesday">'. $date .'</div>
             <div class="headlinesmonth">'. $month .'</div>
         </div>
-        <div class="headlinesyear">'. $year .'</div>
+        <div class="headlinesyear">’'. $year .'</div>
         </div></div>
         </div>' ); ?>
         <div class="row">
@@ -103,7 +105,7 @@ $year = get_the_date('y');
         ?>
     </div>
 </div>
-
+        </div>
 
         </div>
         <div class="col-md-3">

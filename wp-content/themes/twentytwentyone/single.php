@@ -81,7 +81,7 @@ while ( have_posts() ) :
 	if ( comments_open() || get_comments_number() ) {?>
 		
 		<div class="container">
-		<div class="commentspost row">
+		<div class=" row">
 			<?php
 			// Lấy các comments mới nhất từ WP sử dụng WP API
 			$comments = get_comments(array(
@@ -96,7 +96,7 @@ while ( have_posts() ) :
 				$comment_content = $comment->comment_content;
 				$comment_avatar = get_avatar_url($comment->comment_author_email, array('size' => 64)); // Lấy đường dẫn ảnh đại diện
 	
-				echo '<div class="media comment-box">';
+				echo '<div class="media comment-box commentspost ">';
 				echo '<div class="media-left">';
 				echo '<a href="#">';
 				echo '<img class="img-responsive user-photo" src="' . $comment_avatar . '">';

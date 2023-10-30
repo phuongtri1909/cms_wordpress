@@ -6343,13 +6343,14 @@ ul.timeline.lastpost {
 	display: block;
     position: relative;
     line-height: 1.6;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     color: #222;
     font-weight: bold;
 }
 .title-top-views .title-top-views-in{
 	border-bottom: 1px solid #e5e5e5;
     padding-bottom: 0;
+	margin-top: -17px;
     color: #757575;
 }
 .inner-title{
@@ -6462,7 +6463,7 @@ ul.timeline.lastpost {
 .list-top-views h3.list-title-top-views a{ 
 	color: #222222;
 	text-decoration: none;
-    font-size: 18px !important;
+    font-size: 14px !important;
 }
 .list-top-views h3:hover a{ 
 	color:  #087cce;

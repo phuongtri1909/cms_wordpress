@@ -6200,36 +6200,41 @@ margin-left: 11px;
 /* Module 12 */
 .recent_comments {
 	position: relative;
-
-}
-.comment::after{
+	padding-right: 100px;
+	background: white;
+	left: 100px;
+  }
+  
+  .comment::after {
 	position: relative;
-}
-.comment::before{
+  }
+  
+  .comment::before {
 	position: absolute;
 	content: "";
 	top: 30px;
 	opacity: 0.1;
-	width: 30px;
+	width: 50px;
 	border-bottom: 2px solid #000;
-}
-.comment-content{
+  }
+  
+  .comment-content {
 	position: relative;
 	color: #428bca;
 	font-weight: 500;
 	font-size: 90%;
-
-}
-.comment-content::after{
+	left: 15px;
+  }
+  
+  .comment-content::after {
 	position: absolute;
 	content: "";
 	top: 30px;
-	opacity: 0.1;
+	opacity: 0.2;
 	width: 200px;
 	border-bottom: 1px solid #000;
 	color: #428bca;
-}
-
+  }
 /* End module 12 */
 
 
@@ -6239,6 +6244,8 @@ ul.timeline.lastpost {
 	list-style-type: none;
 	position: relative;
 	padding-left: 0;
+	/* Left: 300px;
+	width: 100%; */
   }
   
   ul.timeline.lastpost:before {
@@ -6256,6 +6263,7 @@ ul.timeline.lastpost {
 	margin-bottom: 20px;
 	padding-left: 60px;
 	position: relative;
+	
   }
   
   ul.timeline.lastpost > li:before {
@@ -6270,6 +6278,13 @@ ul.timeline.lastpost {
 	width: 20px;
 	height: 20px;
 	z-index: 2;
+  }
+
+  .br{
+	background: white;
+	max-width: var(--responsive--alignwide-width);
+    margin-left: auto;
+    margin-right: auto;
   }
 /* End Module 15*/
 

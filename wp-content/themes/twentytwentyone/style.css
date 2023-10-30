@@ -6209,7 +6209,7 @@ footer {
     top: 10px;
     left: -6px;
 }
-.commentspost {
+.commentspost .media-body p {
 background: #ffffff;
 }
 

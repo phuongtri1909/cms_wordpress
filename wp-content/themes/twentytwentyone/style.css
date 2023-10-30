@@ -5950,6 +5950,12 @@ footer {
     color: #5f5e5e;
 	font-weight: 300;
 }
+.site-main .content-list-post .content_home .top_news_block_desc .content_post .entry-content a{
+	text-decoration: none; 
+}
+.site-main .content-list-post .content_home .top_news_block_desc .content_post .entry-content a:hover .hover-underline{
+	text-decoration: underline;
+}
 
 .site-main .content-list-post .content_home .top_news_block_desc .topnewstime{
     height: 50px;
@@ -6071,7 +6077,7 @@ footer {
 
 .custom-navigation .post-navigation .post-content-date .post-color{
 	color: #333;
-	font-weight: 600;
+	font-family: 'Prata', serif;
 }
 
 .custom-navigation .post-navigation .post-content-date .post-day{

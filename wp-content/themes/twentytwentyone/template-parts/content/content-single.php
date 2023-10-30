@@ -24,64 +24,6 @@
                 <?php the_content(); ?>
             </div>
         </article>
-        <div class="container">
-    <div class="row">
-        <?php
-        // Lấy các comments mới nhất từ WP sử dụng WP API
-        $comments = get_comments(array(
-            'status' => 'approve', // Chỉ lấy comments đã được phê duyệt
-            'order' => 'DESC', // Sắp xếp theo thứ tự giảm dần (mới nhất lên đầu)
-            'parent' => 0 // Chỉ lấy các comments cha (không lấy các comments con)
-        ));
-
-        // Hiển thị các comments
-        foreach ($comments as $comment) {
-            $comment_author = $comment->comment_author;
-            $comment_content = $comment->comment_content;
-            $comment_avatar = get_avatar_url($comment->comment_author_email, array('size' => 64)); // Lấy đường dẫn ảnh đại diện
-
-            echo '<div class="media comment-box">';
-            echo '<div class="media-left">';
-            echo '<a href="#">';
-            echo '<img class="img-responsive user-photo" src="' . $comment_avatar . '">';
-            echo '</a>';
-            echo '</div>';
-            echo '<div class="media-body">';
-            echo '<h4 class="media-heading">' . $comment_author . '</h4>';
-            echo '<p>' . $comment_content . '</p>';
-
-            // Lấy các comments con của comment cha hiện tại
-            $child_comments = get_comments(array(
-                'parent' => $comment->comment_ID // Lấy các comments con có parent là comment_ID của comment cha
-            ));
-
-            // Hiển thị các comments con
-            foreach ($child_comments as $child_comment) {
-                $child_comment_author = $child_comment->comment_author;
-                $child_comment_content = $child_comment->comment_content;
-                $child_comment_avatar = get_avatar_url($child_comment->comment_author_email, array('size' => 64)); // Lấy đường dẫn ảnh đại diện
-
-                echo '<div class="media comment-box">';
-                echo '<div class="media-left">';
-                echo '<a href="#">';
-                echo '<img class="img-responsive user-photo" src="' . $child_comment_avatar . '">';
-                echo '</a>';
-                echo '</div>';
-                echo '<div class="media-body">';
-                echo '<h4 class="media-heading">' . $child_comment_author . '</h4>';
-                echo '<p>' . $child_comment_content . '</p>';
-                echo '</div>';
-                echo '</div>';
-            }
-
-            echo '</div>';
-            echo '</div>';
-        }
-        ?>
-    </div>
-</div>
-
-
         </div>
         <div class="col-md-3">
             <div class="recent-posts-container post-content-bg">

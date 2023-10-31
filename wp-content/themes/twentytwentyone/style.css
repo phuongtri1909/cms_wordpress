@@ -6254,7 +6254,9 @@ background: #ffffff;
 .comment-box .media-body {
 	flex-grow: 1;
 }
-
+.commentspost{
+	background-color: #ffffff;
+}
 /* End Module 14 */
 
 /* Module 5 */

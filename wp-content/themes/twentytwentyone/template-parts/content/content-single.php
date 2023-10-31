@@ -112,5 +112,10 @@ $year = get_the_date('y');
                 wp_reset_postdata();
                 ?>
             </div>
+            <div class="views-all-news">
+                <div class="all-news">
+                    <a class="all-news-title" href="<?php echo home_url(); ?>">Xem tất cả tin tức</a>
+                </div>
+            </div>
         </div>
     </div>

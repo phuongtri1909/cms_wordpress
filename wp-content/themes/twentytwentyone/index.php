@@ -78,7 +78,9 @@ get_header(); ?>
 
 			}?>
 		</div>
-		<div class="col-md-3 recent_comments">
+		<div class="col-md-3">
+			<div class = "recents_comments">
+				<div class="commentss">
 			<p class = "comment">Comment</p>
 				<?php
 					$args = array(
@@ -101,6 +103,8 @@ get_header(); ?>
 						echo 'Không có comment nào.';
 					}
 				?>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

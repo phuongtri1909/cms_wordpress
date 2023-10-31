@@ -11,10 +11,39 @@
 
 ?>
 
-    <div class="row">
-        <div class="col-md-3">
-            <!-- Nội dung các cột khác trong col-md-2 ở đây -->
+<div class="row">
+    <div class="col-md-3 bg-corossedbg">
+ 
+        <div class="crossedbg-13">
+              
+                <div class="br-13">
+                    <div class="crossedbg">
+
+                    </div>
+                        <div class="row br9">
+                 
+                            <div class="categories">
+                                <?php get_wp_categories(); ?>
+                            </div>
+                                <?php
+                                    function get_wp_categories() {
+                                        $categories = get_categories();
+                                        if ($categories) {
+                                            echo '<ul>';
+                                            foreach ($categories as $category) {
+                                                echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                                            }
+                                        echo '</ul>';
+                                        } else {
+                                        echo 'No categories found.';
+                                        }
+                                    }
+                                ?>
+                    </div>
+                </div>
+                
         </div>
+    </div>
         <div class="col-md-6">
             
         <?php     
@@ -82,6 +111,11 @@ $year = get_the_date('y');
                 endforeach;
                 wp_reset_postdata();
                 ?>
+            </div>
+            <div class="views-all-news">
+                <div class="all-news">
+                    <a class="all-news-title" href="<?php echo home_url(); ?>">Xem tất cả tin tức</a>
+                </div>
             </div>
         </div>
     </div>

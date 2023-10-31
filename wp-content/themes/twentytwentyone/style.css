@@ -6073,10 +6073,7 @@ footer {
 .custom-navigation .post-navigation .post-content-date{
 	position: static;
 	margin-left: 20px;
-}
-
-.custom-navigation .post-navigation .post-content-recent{
-	margin-left: 30px;
+	padding-bottom: 0;
 }
 
 .custom-navigation .post-navigation .post-content-date a{
@@ -6101,12 +6098,21 @@ footer {
 	margin-right: 45px;
 	padding-top: 2px;
 }
+
+.custom-navigation .next-post{
+	padding-bottom: 5px;
+}
+
+.custom-navigation .previous-post{
+	padding-top: 10px;
+}
 /*end module 7 */
 
 /* Moudule 10 */
 .post-content-bg{
 	background: #56bdbf;
 	width: 100%;
+	padding-bottom: 2.5rem;
 }
 .post-color{
 	color: var(--global--color-white);
@@ -6129,6 +6135,7 @@ footer {
 .post-content-recent .post-content-date .entry-header-cus{
 	border-bottom: none !important;
 	padding-bottom: 0px !important;
+	margin-bottom: 0px;
 }
 .post-content-recent .post-content-date .entry-header-cus:hover a{
 	color: #fff !important;
@@ -6150,6 +6157,7 @@ footer {
     vertical-align: middle;
     top: 1.5rem;
     left: 10px;
+	padding-bottom: 15px;
 }
 .post-content-recent .post-content-date .post-md{
 	float: left;
@@ -6157,7 +6165,7 @@ footer {
 }
 .post-content-recent .post-content-date .post-day{
 	border-bottom: 1px solid #fff;
-	padding-bottom: 1px;
+	padding-bottom: 3px;
 }
 .post-content-recent .post-content-date .post-month{
 	line-height: 1.7em;
@@ -6171,6 +6179,21 @@ footer {
     margin-left: 3px;
 	margin-top: -5px;
 }
+.views-all-news .all-news{
+	display: block;
+    padding: 10px;
+    text-align: center;
+    background: #62c6c8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.views-all-news .all-news .all-news-title{
+	color: #ffff !important;
+}
+ .views-all-news .all-news:hover a{
+	color: #ffff !important;
+}
+
 /* End Module 10 */
 
 /* Module 14 */
@@ -6282,47 +6305,70 @@ margin-left: 11px;
 }
 /* End Module 5 */
 /* Module 12 */
-.recent_comments {
-	position: relative;
+.recents_comments {
+	background: white;
+	height: 200px;
+  }
 
+.recents_comments .commentss{
+	padding-top: 20px;
+	margin-left: 20px;
 }
-.comment::after{
+  
+  .comment::after {
 	position: relative;
-}
-.comment::before{
+  }
+  
+  .comment::before {
 	position: absolute;
 	content: "";
-	top: 30px;
+	top: 50px;
 	opacity: 0.1;
-	width: 30px;
+	width: 50px;
 	border-bottom: 2px solid #000;
-}
-.comment-content{
+  }
+  
+  .comment-content {
 	position: relative;
 	color: #428bca;
 	font-weight: 500;
 	font-size: 90%;
-
-}
-.comment-content::after{
+	left: 15px;
+  }
+  
+  .comment-content::after {
 	position: absolute;
 	content: "";
 	top: 30px;
-	opacity: 0.1;
+	opacity: 0.2;
 	width: 200px;
-	border-bottom: 1px solid #000;
 	color: #428bca;
-}
-
+  }
+  .comment-content::before{
+	border-bottom: 1px solid #000;
+	position: absolute;
+	content: "";
+	top: 30px;
+	opacity: 0.2;
+	width: 200px;
+	right: 100%;
+	left: -15px;
+ }
 /* End module 12 */
 
 
 /* Module 15*/
-
+.lastpost-list{
+	max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
 ul.timeline.lastpost {
 	list-style-type: none;
 	position: relative;
 	padding-left: 0;
+	/* Left: 300px;
+	width: 100%; */
   }
   
   ul.timeline.lastpost:before {
@@ -6340,6 +6386,7 @@ ul.timeline.lastpost {
 	margin-bottom: 20px;
 	padding-left: 60px;
 	position: relative;
+	
   }
   
   ul.timeline.lastpost > li:before {
@@ -6355,7 +6402,64 @@ ul.timeline.lastpost {
 	height: 20px;
 	z-index: 2;
   }
+
+  .lastpost-list .br{
+	background: white;
+  }
 /* End Module 15*/
+
+/*Module 9*/
+
+.categories ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.categories li {
+	position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 10px; 
+	border-bottom: 1px solid #c9c7c7;
+}
+
+.categories li::before{
+	content: ""; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; 
+    height: 10px; 
+    background-color: #f5ce31; 
+    border-radius: 50%; 
+}
+
+.categories a {
+    text-decoration: none;
+    color: #428bca;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.crossedbg-13 .br-13 .br9 {
+background-color: white;
+padding-left: 30px;
+}
+ .bg-corossedbg .crossedbg {
+	position: relative;
+
+}
+.bg-corossedbg .crossedbg::before{
+    content: "";
+    position: absolute;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+    right: -14px;
+    width: 110%;
+    top: -17px;
+ }
+/* End Module 9*/
 
 /* Module 11 */
 .title-top-views {
@@ -6414,6 +6518,7 @@ ul.timeline.lastpost {
     top: 0;
     left: 50%;
     background: #e5e5e5;
+	z-index: 1;
 }
 
 .title-post-top-views{
@@ -6432,6 +6537,7 @@ ul.timeline.lastpost {
     margin-bottom: 15px;
     border-bottom: 1px solid #e5e5e5;
 	box-sizing: border-box;
+	background: #fff;
 }
 .border-row-top-views .title-post-top-views .list-top-views:nth-child(1){
 	order: 1;
@@ -6487,6 +6593,9 @@ ul.timeline.lastpost {
 .list-top-views h3:hover a{ 
 	color:  #087cce;
 	text-decoration: none;
+}
+.content-list-post  .content_home .top_new_block_desc_5{
+	margin-left: 0.5px !important;
 }
 /* End Module 11 */
 /* module 6 */
@@ -6791,6 +6900,9 @@ section .section-title {
 	border-color: #999eab;
   
 }
+.page-list li {
+	list-style-type: none;
+}
 /* end module 13 */
 
 
@@ -6974,4 +7086,27 @@ section .section-title {
 	color: #777777;
 }
 /* End module 1*/
+/* module 8*/
+.card .text-right .btn-primary:hover {
+    color: #fff !important;
+    background-color: #0069d9 !important;
+    border-color: #0062cc !important;
+}
+.card .text-right .btn-primary {
+	border-radius: 7px !important;
+	color: #fff  !important;
+	background-color: #007bff  !important;
+    border-color: #007bff  !important;
+	margin-right: 18px  !important;
+	position: relative  !important;
+	top: -14px  !important;
+}
+.card .card-body .tab-content .form-control {
+	border: 1px solid rgb(206, 212, 218) !important;
+	padding: 0.375rem 0.75rem !important;
+	height: 97px !important;
+	position: relative !important;
+	top: 4px !important;
+}
+/* End module 8*/
 

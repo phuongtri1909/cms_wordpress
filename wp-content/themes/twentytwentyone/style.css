@@ -6458,9 +6458,18 @@ padding-left: 30px;
     background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
     height: 15px;
     right: -14px;
-    width: 110%;
+    width: 106%;
     top: -17px;
  }
+.categories-2{
+	padding-bottom: 20px;
+	margin-left: -12px;
+ }
+
+ .categories li:last-child {
+	border-bottom: none; 
+}
+ 
 /* End Module 9*/
 
 /* Module 11 */

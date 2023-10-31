@@ -431,7 +431,7 @@ function get_the_excerpt( $post = null ) {
 	 * @param string  $post_excerpt The post excerpt.
 	 * @param WP_Post $post         Post object.
 	 */
-	if (is_single()) {
+	if (is_single() || is_page()) {
 		return apply_filters( 'get_the_excerpt', $post->post_excerpt, $post );
     }
 	 $read_more_link = '<a href="' . esc_url(get_permalink($post)) . '">[<span class="hover-underline">...</span>]</a>';

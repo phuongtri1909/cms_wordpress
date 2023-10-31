@@ -64,16 +64,11 @@ get_header();
 						echo '<div class="row">';
 						echo '<div class="col-md-5">';
 						
-						echo '<div class="img-detail-search top_news_block_thumb">';
-						$content = get_the_content();
-						$pattern = '/<img.*?>/i';
-						preg_match_all($pattern, $content, $matches);
-						if (!empty($matches[0])) {
-							foreach ($matches[0] as $image) {
-								echo $image;
-							}
+						if(is_search()){
+							echo '<div class="img-detail-search top_news_block_thumb">';
+							twenty_twenty_one_post_thumbnail();
+							echo '</div>';
 						}
-						echo '</div>';
 						echo '</div>';
 						
 						echo '<div class="col-md-7 top_news_block_desc">';

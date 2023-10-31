@@ -6107,6 +6107,7 @@ footer {
 .post-content-bg{
 	background: #56bdbf;
 	width: 100%;
+	padding-bottom: 2.5rem;
 }
 .post-color{
 	color: var(--global--color-white);
@@ -6129,6 +6130,7 @@ footer {
 .post-content-recent .post-content-date .entry-header-cus{
 	border-bottom: none !important;
 	padding-bottom: 0px !important;
+	margin-bottom: 0px;
 }
 .post-content-recent .post-content-date .entry-header-cus:hover a{
 	color: #fff !important;
@@ -6158,7 +6160,7 @@ footer {
 }
 .post-content-recent .post-content-date .post-day{
 	border-bottom: 1px solid #fff;
-	padding-bottom: 1px;
+	padding-bottom: 3px;
 }
 .post-content-recent .post-content-date .post-month{
 	line-height: 1.7em;

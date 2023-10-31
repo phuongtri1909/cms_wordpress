@@ -6745,6 +6745,41 @@ section .section-title {
 }
 }
 /* End module 3*/
+/* module 13 */
 
+.page-list li img {
+	width: 100px; /* Định kích thước chiều rộng của ảnh là 100px */
+	height: 100px; /* Định kích thước chiều cao của ảnh là 100px */
+	object-fit: cover; /* Hiển thị ảnh mà không bị méo */
+	margin-right: 10px; /* Khoảng cách phải giữa ảnh và nội dung */
+}
+.pages{
+	font-size: 15px;
+	color: #000;
+}
+.pages a {
+	color: #000;
+}
+.titlepage {
+	font-size: 25px;
+	color: #21759b;
+	
+}
+ .ww {
+	border-color: #999eab;
+    margin: 0;
+    border-width: 2px;
+    width: 45px;
+    margin-bottom: 10px;
+}
+#content.page{
+	background: #ffffff;
+	height: auto;
+}
+.gg{
+	border-color: #999eab;
+  
+}
+/* end module 13 */
 
 

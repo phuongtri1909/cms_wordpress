@@ -17,6 +17,8 @@ if ( 'aside' === $post_format || 'status' === $post_format ) {
 <header class="entry-header entry-header-cus entry-header-cus-5">
 	<?php
 	the_title( sprintf( '<h2 class=" entry-title-cus entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
-	twenty_twenty_one_post_thumbnail();
+	if(!is_home() && !is_single() && !is_search()){
+		twenty_twenty_one_post_thumbnail();
+	}
 	?>
 </header><!-- .entry-header -->

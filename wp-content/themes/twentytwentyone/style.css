@@ -6300,47 +6300,70 @@ margin-left: 11px;
 }
 /* End Module 5 */
 /* Module 12 */
-.recent_comments {
-	position: relative;
+.recents_comments {
+	background: white;
+	height: 200px;
+  }
 
+.recents_comments .commentss{
+	padding-top: 20px;
+	margin-left: 20px;
 }
-.comment::after{
+  
+  .comment::after {
 	position: relative;
-}
-.comment::before{
+  }
+  
+  .comment::before {
 	position: absolute;
 	content: "";
-	top: 30px;
+	top: 50px;
 	opacity: 0.1;
-	width: 30px;
+	width: 50px;
 	border-bottom: 2px solid #000;
-}
-.comment-content{
+  }
+  
+  .comment-content {
 	position: relative;
 	color: #428bca;
 	font-weight: 500;
 	font-size: 90%;
-
-}
-.comment-content::after{
+	left: 15px;
+  }
+  
+  .comment-content::after {
 	position: absolute;
 	content: "";
 	top: 30px;
-	opacity: 0.1;
+	opacity: 0.2;
 	width: 200px;
-	border-bottom: 1px solid #000;
 	color: #428bca;
-}
-
+  }
+  .comment-content::before{
+	border-bottom: 1px solid #000;
+	position: absolute;
+	content: "";
+	top: 30px;
+	opacity: 0.2;
+	width: 200px;
+	right: 100%;
+	left: -15px;
+ }
 /* End module 12 */
 
 
 /* Module 15*/
-
+.lastpost-list{
+	max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
 ul.timeline.lastpost {
 	list-style-type: none;
 	position: relative;
 	padding-left: 0;
+	/* Left: 300px;
+	width: 100%; */
   }
   
   ul.timeline.lastpost:before {
@@ -6358,6 +6381,7 @@ ul.timeline.lastpost {
 	margin-bottom: 20px;
 	padding-left: 60px;
 	position: relative;
+	
   }
   
   ul.timeline.lastpost > li:before {
@@ -6373,7 +6397,64 @@ ul.timeline.lastpost {
 	height: 20px;
 	z-index: 2;
   }
+
+  .lastpost-list .br{
+	background: white;
+  }
 /* End Module 15*/
+
+/*Module 9*/
+
+.categories ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.categories li {
+	position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 10px; 
+	border-bottom: 1px solid #c9c7c7;
+}
+
+.categories li::before{
+	content: ""; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; 
+    height: 10px; 
+    background-color: #f5ce31; 
+    border-radius: 50%; 
+}
+
+.categories a {
+    text-decoration: none;
+    color: #428bca;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.crossedbg-13 .br-13 .br9 {
+background-color: white;
+padding-left: 30px;
+}
+ .bg-corossedbg .crossedbg {
+	position: relative;
+
+}
+.bg-corossedbg .crossedbg::before{
+    content: "";
+    position: absolute;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+    right: -14px;
+    width: 110%;
+    top: -17px;
+ }
+/* End Module 9*/
 
 /* Module 11 */
 .title-top-views {

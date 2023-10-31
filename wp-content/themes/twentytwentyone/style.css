@@ -6292,7 +6292,7 @@ background: #ffffff;
 	margin-bottom: -2px !important;
 }
 .top_news_block_desc .content-detail-search {
-    margin-left: -0.5em;
+    margin-left: -1.5em;
 }
 .content-detail-search .topnewstime-5 .topnewsmonth-5{
 	white-space: nowrap;
@@ -6594,8 +6594,8 @@ padding-left: 30px;
 	color:  #087cce;
 	text-decoration: none;
 }
-.content-list-post  .content_home .top_new_block_desc_5{
-	margin-left: 0.5px !important;
+.site-main .content-list-post .content_home .top_news_block_desc{
+	margin-left: 0.25px ;
 }
 /* End Module 11 */
 /* module 6 */

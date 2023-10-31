@@ -6219,7 +6219,18 @@ footer {
 .commentspost .media-body p {
 background: #ffffff;
 }
+.comment-box {
+	display: flex;
+	margin-bottom: 20px;
+}
 
+.comment-box .media-left {
+	margin-right: 10px;
+}
+
+.comment-box .media-body {
+	flex-grow: 1;
+}
 
 /* End Module 14 */
 

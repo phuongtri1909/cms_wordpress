@@ -6073,10 +6073,7 @@ footer {
 .custom-navigation .post-navigation .post-content-date{
 	position: static;
 	margin-left: 20px;
-}
-
-.custom-navigation .post-navigation .post-content-recent{
-	margin-left: 30px;
+	padding-bottom: 0;
 }
 
 .custom-navigation .post-navigation .post-content-date a{
@@ -6100,6 +6097,14 @@ footer {
 .custom-navigation .post-navigation .post-content-date .post-year{
 	margin-right: 45px;
 	padding-top: 2px;
+}
+
+.custom-navigation .next-post{
+	padding-bottom: 5px;
+}
+
+.custom-navigation .previous-post{
+	padding-top: 10px;
 }
 /*end module 7 */
 

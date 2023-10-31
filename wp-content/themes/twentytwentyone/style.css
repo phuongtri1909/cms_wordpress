@@ -6271,12 +6271,15 @@ margin-left: 11px;
 }
 /* End Module 5 */
 /* Module 12 */
-.recent_comments {
-	position: relative;
-	padding-right: 100px;
+.recents_comments {
 	background: white;
-	left: 100px;
+	height: 200px;
   }
+
+.recents_comments .commentss{
+	padding-top: 20px;
+	margin-left: 20px;
+}
   
   .comment::after {
 	position: relative;
@@ -6285,7 +6288,7 @@ margin-left: 11px;
   .comment::before {
 	position: absolute;
 	content: "";
-	top: 30px;
+	top: 50px;
 	opacity: 0.1;
 	width: 50px;
 	border-bottom: 2px solid #000;
@@ -6305,14 +6308,27 @@ margin-left: 11px;
 	top: 30px;
 	opacity: 0.2;
 	width: 200px;
-	border-bottom: 1px solid #000;
 	color: #428bca;
   }
+  .comment-content::before{
+	border-bottom: 1px solid #000;
+	position: absolute;
+	content: "";
+	top: 30px;
+	opacity: 0.2;
+	width: 200px;
+	right: 100%;
+	left: -15px;
+ }
 /* End module 12 */
 
 
 /* Module 15*/
-
+.lastpost-list{
+	max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
 ul.timeline.lastpost {
 	list-style-type: none;
 	position: relative;
@@ -6353,11 +6369,8 @@ ul.timeline.lastpost {
 	z-index: 2;
   }
 
-  .br{
+  .lastpost-list .br{
 	background: white;
-	max-width: var(--responsive--alignwide-width);
-    margin-left: auto;
-    margin-right: auto;
   }
 /* End Module 15*/
 

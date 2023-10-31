@@ -6337,6 +6337,59 @@ ul.timeline.lastpost {
   }
 /* End Module 15*/
 
+/*Module 9*/
+
+.categories ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.categories li {
+	position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 10px; 
+	border-bottom: 1px solid #c9c7c7;
+}
+
+.categories li::before{
+	content: ""; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; 
+    height: 10px; 
+    background-color: #f5ce31; 
+    border-radius: 50%; 
+}
+
+.categories a {
+    text-decoration: none;
+    color: #428bca;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.crossedbg-13 .br-13 .br9 {
+background-color: white;
+padding-left: 30px;
+}
+ .bg-corossedbg .crossedbg {
+	position: relative;
+
+}
+.bg-corossedbg .crossedbg::before{
+    content: "";
+    position: absolute;
+    background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
+    height: 15px;
+    right: -14px;
+    width: 110%;
+    top: -17px;
+ }
+/* End Module 9*/
+
 
 
 

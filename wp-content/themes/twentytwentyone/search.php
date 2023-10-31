@@ -94,7 +94,7 @@ get_header();
 	
 </div>
 </div>
-<div class="row">
+
 		<div class="lastpost-list mt-5 mb-5">
 			<div class="br">
 				<div class="col-md-6 offset-md-3">
@@ -115,7 +115,7 @@ get_header();
 								<li class="timeline-item">
 								<a class="post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								<a class="post-date float-right" href="#"><?php echo get_the_date(); ?></a>
-								<p class="post-content"><?php the_content(); ?></p>
+								<p class="post-content"><?php echo wp_trim_words(get_the_content(), 20); ?></p>
 								</li>
 							<?php
 									}
@@ -128,7 +128,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-</div>
+
 </div>
 <?php
 get_footer();

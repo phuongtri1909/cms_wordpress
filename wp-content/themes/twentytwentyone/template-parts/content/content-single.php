@@ -11,39 +11,39 @@
 
 ?>
 
-<div class="row">
-    <div class="col-md-3 bg-corossedbg">
- 
-        <div class="crossedbg-13">
-              
-                <div class="br-13">
-                    <div class="crossedbg">
+        <div class="row">
+            <div class="col-md-3 bg-corossedbg">
+            <h4 class="categories-2">Categories</h4>
+                <div class="crossedbg-13">
 
-                    </div>
-                        <div class="row br9">
-                 
-                            <div class="categories">
-                                <?php get_wp_categories(); ?>
+                        <div class="br-13">
+                            <div class="crossedbg">
+
                             </div>
-                                <?php
-                                    function get_wp_categories() {
-                                        $categories = get_categories();
-                                        if ($categories) {
-                                            echo '<ul>';
-                                            foreach ($categories as $category) {
-                                                echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                                <div class="row br9">
+
+                                    <div class="categories">
+                                        <?php get_wp_categories(); ?>
+                                    </div>
+                                        <?php
+                                            function get_wp_categories() {
+                                                $categories = get_categories();
+                                                if ($categories) {
+                                                    echo '<ul>';
+                                                    foreach ($categories as $category) {
+                                                        echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                                                    }
+                                                echo '</ul>';
+                                                } else {
+                                                echo 'No categories found.';
+                                                }
                                             }
-                                        echo '</ul>';
-                                        } else {
-                                        echo 'No categories found.';
-                                        }
-                                    }
-                                ?>
-                    </div>
-                </div>
+                                        ?>
+                            </div>
+                        </div>
                 
+            </div>
         </div>
-    </div>
         <div class="col-md-6">
             
         <?php     

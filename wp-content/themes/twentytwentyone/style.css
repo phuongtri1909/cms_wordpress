@@ -6513,6 +6513,7 @@ padding-left: 30px;
     top: 0;
     left: 50%;
     background: #e5e5e5;
+	z-index: 1;
 }
 
 .title-post-top-views{
@@ -6531,6 +6532,7 @@ padding-left: 30px;
     margin-bottom: 15px;
     border-bottom: 1px solid #e5e5e5;
 	box-sizing: border-box;
+	background: #fff;
 }
 .border-row-top-views .title-post-top-views .list-top-views:nth-child(1){
 	order: 1;
@@ -6586,6 +6588,9 @@ padding-left: 30px;
 .list-top-views h3:hover a{ 
 	color:  #087cce;
 	text-decoration: none;
+}
+.content-list-post  .content_home .top_new_block_desc_5{
+	margin-left: 0.5px !important;
 }
 /* End Module 11 */
 /* module 6 */

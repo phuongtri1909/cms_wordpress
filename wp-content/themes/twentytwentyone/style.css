@@ -5941,7 +5941,7 @@ footer {
 .site-main .content-list-post .content_home .top_news_block_desc{
     background-color: #fff;
 	font-size: 0.9em;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
 	box-shadow: 0px 1px 4px 0px rgba(0,0,0,.5);
 }
 

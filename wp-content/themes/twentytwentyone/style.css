@@ -6267,6 +6267,7 @@ background: #ffffff;
 .list-view-search .content-detail-search .content_home .top_new_block_desc_5{
 	background: none !important;
 	box-shadow: none !important;
+	margin-left: 14px;	
 }
 /* .entry-header .post-thumbnail .post-thumbnail-inner img,.detailpost .entry-header .post-thumbnail img,
 .post-content-date .entry-header-cus .post-thumbnail img,.offset-md-3 .lastpost .timeline-item .wp-block-image img{
@@ -6277,7 +6278,7 @@ background: #ffffff;
 	max-width: 100%;
     width: 100%;
 }
-.top_news_block_thumb .post-thumbnail .post-thumbnail-inner img{
+.list-view-search .top_news_block_thumb .post-thumbnail .post-thumbnail-inner img{
 	width: 235px !important;
     height: 137px !important;
 	object-fit: cover;
@@ -6475,7 +6476,6 @@ padding-left: 30px;
 .title-top-views .title-top-views-in{
 	border-bottom: 1px solid #e5e5e5;
     padding-bottom: 0;
-	margin-top: -17px;
     color: #757575;
 }
 .inner-title{
@@ -6532,6 +6532,11 @@ padding-left: 30px;
     line-height: 160%;
     margin-bottom: 4px;
 }
+.border-row-top-views{
+	background-color: #fff;
+    padding: 10px;
+}
+
 .list-top-views{
 	width: 100%;
     float: left;
@@ -6539,7 +6544,7 @@ padding-left: 30px;
     margin-bottom: 15px;
     border-bottom: 1px solid #e5e5e5;
 	box-sizing: border-box;
-	background: #fff;
+
 }
 .border-row-top-views .title-post-top-views .list-top-views:nth-child(1){
 	order: 1;
@@ -6595,9 +6600,6 @@ padding-left: 30px;
 .list-top-views h3:hover a{ 
 	color:  #087cce;
 	text-decoration: none;
-}
-.site-main .content-list-post .content_home .top_news_block_desc{
-	margin-left: 0.25px ;
 }
 /* End Module 11 */
 /* module 6 */

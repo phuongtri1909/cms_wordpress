@@ -2549,8 +2549,8 @@ function comment_form( $args = array(), $post = null ) {
 
 		$fields['cookies'] = sprintf(
 			'<p class="comment-form-cookies-consent">%s %s</p>',
-			sprintf(
-				'<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"%s />',
+			sprintf('<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox"  />',
+				
 				$consent
 			),
 			sprintf(
@@ -2577,14 +2577,40 @@ function comment_form( $args = array(), $post = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => sprintf(
-			'<p class="comment-form-comment">%s %s</p>',
-			sprintf(
-				'<label for="comment">%s%s</label>',
-				_x( 'Comment', 'noun' ),
-				$required_indicator
-			),
-			'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525"' . $required_attribute . '></textarea>'
-		),
+			(is_user_logged_in()) ? sprintf('
+				<section class="card">
+					<div class="card-header">
+						<ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+							<a
+								class="nav-link active"
+								id="posts-tab"
+								data-toggle="tab"
+								href="#posts"
+								role="tab"
+								aria-controls="posts"
+								aria-selected="true"
+								>Make a Post</a
+							>
+							</li>
+						</ul>
+					</div>
+					<div class="card-body">
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+								<div class="form-group">
+								<label class="sr-only" for="message">post</label>
+								<textarea class="form-control" id="comment" name="comment" rows="3" maxlength="65525" placeholder="What are you thinking..." ' . $required_attribute . '></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">				
+						<button name="submit" type="submit" id="submit" class="btn btn-primary">share</button>
+						<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+						<input type="hidden" name="comment_parent" id="comment_parent" value="0">			
+               		 </div>		
+				</section>') : sprintf('<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525"' . $required_attribute . '></textarea>')),
 		'must_log_in'          => sprintf(
 			'<p class="must-log-in">%s</p>',
 			sprintf(
@@ -2595,7 +2621,7 @@ function comment_form( $args = array(), $post = null ) {
 			)
 		),
 		'logged_in_as'         => sprintf(
-			'<p class="logged-in-as">%s%s</p>',
+			'<p class="logged-in-as"></p>',
 			sprintf(
 				/* translators: 1: User name, 2: Edit user link, 3: Logout URL. */
 				__( 'Logged in as %1$s. <a href="%2$s">Edit your profile</a>. <a href="%3$s">Log out?</a>' ),
@@ -2631,7 +2657,7 @@ function comment_form( $args = array(), $post = null ) {
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),
 		'label_submit'         => __( 'Post Comment' ),
-		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
+		'submit_button'        => '',
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',
 	);
@@ -2668,9 +2694,10 @@ function comment_form( $args = array(), $post = null ) {
 	?>
 	<div id="respond" class="<?php echo esc_attr( $args['class_container'] ); ?>">
 		<?php
-		echo $args['title_reply_before'];
-
-		comment_form_title( $args['title_reply'], $args['title_reply_to'], true, $post_id );
+		if (!is_user_logged_in()) {
+			echo $args['title_reply_before'];
+			comment_form_title($args['title_reply'], $args['title_reply_to'], true, $post_id);
+		}
 
 		if ( get_option( 'thread_comments' ) ) {
 			echo $args['cancel_reply_before'];

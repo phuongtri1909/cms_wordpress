@@ -24,16 +24,63 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content">
-		<?php
-		/* translators: Hidden accessibility text. */
-		esc_html_e( 'Skip to content', 'twentytwentyone' );
-		?>
-	</a>
+<div class="hao-header">
+	<nav class="nav-hea navbar navbar-expand-lg navbar-light bg-light">
+            <a style="color: #777777;" class="group-d navbar-brand" href="/"><?php bloginfo('name'); ?></a>
+            <button class="toggle-d navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-	<?php get_template_part( 'template-parts/header/site-header' ); ?>
+        <form class="collapse navbar-collapse" id="navbarSupportedContent" action="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                        <a style="color: #777777;background: #e7e7e7;" class="homee nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <div class="formm form-inline my-2 my-lg-0">
+                    <input name="s" class="hea-search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="button-search btn" type="submit">Submit</button>
+                </div>
+            </ul>
+                <?php get_template_part( 'template-parts/header/site-nav' ); ?>
+				<li id="hea-li" style = "list-style: none;">
+					<a class="hea-mobile nav-link dfr" href="#">
+						<div class="hea-1">
+							<i style="font-size: 20px;color: #000;position: relative;right: -2px;" class="fas fa-ellipsis-h">
+							</i>
+							<p class="hea-menu">Menu</p>
+						</div>
 
+					</a>
+				</li>
+				<li  style = "list-style: none;">
+					<a class="hea nav-link dfr" href="/?s">
+						<div class="hea-1">
+							<i style="font-size: 20px;color: #000;position: relative; right: -4px;" class="fas fa-search"></i>
+						
+								<p type="submit" class="hea-menu">Search</p>
+						
+						</div>
+					</a>
+				</li>
+				
+				<li class="nav-item dropdown total-dropdown"  style = "list-style: none;">
+					<a class="hea-mobile nav-link dfr" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+						<div class="hea-1">
+							<i style="font-size: 25px;color: #7c7c7d;position: relative;right: -15px;" class="fas-solid fas fa-user-circle"></i>
+							<p class="dropdown-toggle">Account</p>
+						</div>
+					</a>
+					<div class="dropdown-menu child-dropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+			</ul>
+		</form>
+	</nav>
+</div>
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area container-detail">
 			<main id="main" class="site-main">

@@ -83,8 +83,11 @@ while ( have_posts() ) :
 		<div class="container">
     <div class="row">
         <?php
-        // Lấy các comments mới nhất từ WP sử dụng WP API
+        $post_id = get_the_ID(); // Lấy ID của bài viết hiện tại
+        
+        // Lấy các comments của bài viết hiện tại từ WP sử dụng WP API
         $comments = get_comments(array(
+            'post_id' => $post_id, // Chỉ lấy các comments của bài viết có ID là $post_id
             'status' => 'approve', // Chỉ lấy comments đã được phê duyệt
             'order' => 'DESC', // Sắp xếp theo thứ tự giảm dần (mới nhất lên đầu)
             'parent' => 0 // Chỉ lấy các comments cha (không lấy các comments con)
@@ -138,7 +141,6 @@ while ( have_posts() ) :
         ?>
     </div>
 </div>
-	
 		
 	<?php  } comments_template();
 endwhile; // End of the loop.?>
